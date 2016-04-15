@@ -1,6 +1,6 @@
 # Leipzig-Furman Collaboration: virtualMachine2016
 
-A Vagrant virtual machine for running CITE/CTS services with data from the Leipzig-Furman collaboration on Plutarch's *Life of Pericles*.
+A Vagrant virtual machine for running CITE/CTS services with data from the Leipzig-Furman collaboration on Plutarch's *Life of Pericles*. The VM runs Ubuntu-server/trusty, 64-bit version. 
 
 ## Requirements
 
@@ -25,4 +25,9 @@ These instructions assume familarity with the command-line environment on your c
 
 - Start the virtual machine with the termina command `vagrant up`. The first time you do this, Vagrant will take many minutes downloading files, seting up a Linux virtual machine, and provisioning it. **Do not let your computer go to sleep during this process**. 
 
+## Using the Virtual Machine
 
+- `vagrant up` starts the machine.
+- `vagrant ssh` (from the `virtualMachine2016` directory) logs into the machine. `logout` exits the machine.
+- Stop the virtual machine with `vagrant halt`.
+- You can destroy the virtual machine with `vagrant destroy`. After doing that, you can re-created it with `vagrant up`, at which point it will download and provision a fresh new instance of it.
