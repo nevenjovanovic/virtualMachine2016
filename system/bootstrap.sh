@@ -61,6 +61,7 @@ chown vagrant:vagrant /home/vagrant/.profile
 
 cd /vagrant
 git clone https://github.com/cite-architecture/citemgr.git
+git clone https://github.com/cite-architecture/cs2.git
 
 #########################################################
 ### Set Up CITE Manager  ###########
@@ -71,6 +72,13 @@ git pull
 git checkout cs2
 cp ../scripts/cts-test.gradle .
 gradle clean
+
+#########################################################
+### Set Up CITE Servlet 2  ###########
+#########################################################
+
+cd /vagrant/cs2
+git pull
 
 #########################################################
 ### Set Up Stuff for Fuseki  ###########
