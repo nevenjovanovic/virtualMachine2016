@@ -79,6 +79,7 @@ gradle clean
 
 cd /vagrant/cs2
 git pull
+git checkout vm2016
 
 #########################################################
 ### Set Up Stuff for Fuseki  ###########
