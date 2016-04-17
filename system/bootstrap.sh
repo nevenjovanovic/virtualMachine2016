@@ -40,6 +40,7 @@ cd /usr/bin
 sudo curl http://apache.mirrors.ionfish.org/jena/binaries/apache-jena-3.0.1.tar.gz -o apache-jena-3.0.1.tar.gz
 sudo tar zxfv apache-jena-3.0.1.tar.gz
 sudo rm apache-jena-3.0.1.tar.gz
+sudo ln -s apache-jena-3.0.1 jena
 
 sudo curl http://apache.mirrors.ionfish.org/jena/binaries/apache-jena-fuseki-2.3.1.tar.gz -o apache-jena-fuseki-2.3.1.tar.gz
 sudo tar zxfv apache-jena-fuseki-2.3.1.tar.gz
@@ -80,13 +81,23 @@ gradle clean
 cd /vagrant/cs2
 git pull
 git checkout vm2016
+gradle clean
+
 
 #########################################################
 ### Set Up Stuff for Fuseki  ###########
 #########################################################
 
-mkdir /vagrant/databases
-mkdir /vagrant/data
+#mkdir /vagrant/cs2/fuseki/fusekibase/databases
+#mkdir /vagrant/data
+cd /vagrant/cs2
+gradle clean
+gradle configure
+#cd /vagrant/cs2/fuseki/fusekibase/databases
+#mkdir cts
+#mkdir test
+
+
 
 
 

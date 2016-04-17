@@ -2,4 +2,6 @@ export PATH=/vagrant/morpheus/bin:/vagrant/scripts:$PATH
 export PATH=/usr/bin/apache-jena-3.0.1/bin:/usr/bin/apache-jena-fuseki-2.3.1/bin:$PATH
 
 export EDITOR=/bin/nano
+export FUSEKI_BASE=/vagrant/cs2/fuseki/fusekibase
+export JENA_HOME=/usr/bin/jena
 
