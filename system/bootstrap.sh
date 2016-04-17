@@ -106,8 +106,16 @@ su vagrant << EOF
 cd /vagrant/cs2
 gradle clean
 gradle config
-mkdir -p /vagrant/cs2/fuseki/fusekibase/databases/ds
-mkdir -p /vagrant/cs2/fuseki/fusekibase/databases/
+mkdir -p /vagrant/cs2/fuseki/fusekibase/database/ds
+mkdir -p /vagrant/cs2/fuseki/fusekibase/database/
+mkdir -p /vagrant/cs2/sparqlcts/src/main/webapp/invs
+cp /vagrant/testcorpus2016/testinventory-2016.xml /vagrant/cs2/sparqlcts/src/main/webapp/invs/inventory.xml
+
+cd /vagrant
+tdbloader2 --loc /vagrant/cs2/fuseki/fusekibase/database/ds /vagrant/testcorpus2016/testcorpus2016.ttl
+cd /vagrant/cs2/sparqlcts
+
+gradle clean
 
 EOF
 
