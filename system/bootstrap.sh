@@ -30,8 +30,19 @@ apt-get install -y git
 apt-get install -y nano
 
 
+
 # JDK bundle
-apt-get install -y openjdk-7-jdk
+#apt-get install -y openjdk-7-jdk
+apt-get -y -q update
+apt-get -y -q upgrade
+apt-get -y -q install software-properties-common htop
+add-apt-repository ppa:webupd8team/java
+apt-get -y -q update
+echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
+echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
+apt-get -y -q install oracle-java8-installer
+apt-get -y -q install oracle-java7-installer
+update-java-alternatives -s java-8-oracle
 apt-get -y install groovy
 apt-get -y install gradle
 
@@ -72,7 +83,7 @@ cd citemgr
 git pull
 git checkout cs2
 cp ../scripts/cts-test.gradle .
-gradle clean
+#gradle clean
 
 #########################################################
 ### Set Up CITE Servlet 2  ###########
@@ -81,21 +92,24 @@ gradle clean
 cd /vagrant/cs2
 git pull
 git checkout vm2016
-gradle clean
+#gradle clean
 
 
 #########################################################
 ### Set Up Stuff for Fuseki  ###########
 #########################################################
 
-#mkdir /vagrant/cs2/fuseki/fusekibase/databases
-#mkdir /vagrant/data
+### Do this a user vagrant
+
+su vagrant << EOF
+
 cd /vagrant/cs2
 gradle clean
-gradle configure
-#cd /vagrant/cs2/fuseki/fusekibase/databases
-#mkdir cts
-#mkdir test
+gradle config
+mkdir -p /vagrant/cs2/fuseki/fusekibase/databases/ds
+mkdir -p /vagrant/cs2/fuseki/fusekibase/databases/
+
+EOF
 
 
 

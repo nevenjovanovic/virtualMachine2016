@@ -31,3 +31,15 @@ These instructions assume familarity with the command-line environment on your c
 - `vagrant ssh` (from the `virtualMachine2016` directory) logs into the machine. `logout` exits the machine.
 - Stop the virtual machine with `vagrant halt`.
 - You can destroy the virtual machine with `vagrant destroy`. After doing that, you can re-created it with `vagrant up`, at which point it will download and provision a fresh new instance of it.
+
+## Where Things Are
+
+The `virtualMachine2016` directory, where this `README.md` file is, is mapped in the virtual machine to `/vagrant`.
+
+### Contents of `/vagrant`
+
+- `scripts`
+- `citemgr`
+- `cs2`
+- `testcorpus2016`
+
