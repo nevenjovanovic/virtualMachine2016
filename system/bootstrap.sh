@@ -94,32 +94,42 @@ git pull
 git checkout vm2016
 #gradle clean
 
-
 #########################################################
-### Set Up Stuff for Fuseki  ###########
+### Set Up Fuseki with Test Data  ###########
 #########################################################
 
-### Do this a user vagrant
 
 su vagrant << EOF
+	
+	
+	export FUSEKI_BASE=/vagrant/cs2/fuseki/fusekibase
+	export JENA_HOME=/usr/bin/jena
 
-cd /vagrant/cs2
-gradle clean
-gradle config
-#mkdir -p /vagrant/cs2/fuseki/fusekibase/databases/ds
-#mkdir -p /vagrant/cs2/fuseki/fusekibase/databases/
-mkdir -p /vagrant/cs2/sparqlcts/src/main/webapp/invs
-cp /vagrant/testcorpus2016/testinventory-2016.xml /vagrant/cs2/sparqlcts/src/main/webapp/invs/inventory.xml
+	cd /vagrant/cs2
+	gradle clean
+	gradle config
+	mkdir -p /vagrant/cs2/sparqlcts/src/main/webapp/invs
+	cp /vagrant/testcorpus2016/testinventory-2016.xml /vagrant/cs2/sparqlcts/src/main/webapp/invs/inventory.xml
+	cd /vagrant/cs2/sparqlcts
+	echo '##################################################'
+	echo '## The following tests are supposed to fail!    ##'
+	echo '##################################################'
 
-#cd /vagrant
-#tdbloader2 --loc /vagrant/cs2/fuseki/fusekibase/databases/ds /vagrant/testcorpus2016/testcorpus2016.ttl
-#cd /vagrant/cs2/sparqlcts
+	gradle farmIntegrationTest
 
-#gradle clean
+	echo '##################################################'
+	echo '## The preceding tests were supposed to fail!   ##'
+	echo '##################################################'
+
+
+	cd /vagrant/cs2/fuseki/fusekibase/databases/ds
+	rm *
+
+
+	echo '##################################################'
+	echo '## Loading CTS Test Data into DB                ##'
+	echo '##################################################'
+
+	/usr/bin/jena/bin/tdbloader2 --loc /vagrant/cs2/fuseki/fusekibase/databases/ds /vagrant/testcorpus2016/testcorpus2016.ttl
 
 EOF
-
-
-
-
-
