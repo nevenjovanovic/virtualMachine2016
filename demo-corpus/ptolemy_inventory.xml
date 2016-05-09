@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="TextInventory.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TextInventory
+    tiid="hmt"
+    tiversion="5.0.rc.1"
+    xmlns="http://chs.harvard.edu/xmlns/cts"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <ctsnamespace
+        abbr="greekLit"
+        ns="http://chs.harvard.edu/ctsns/greekLit">
+        <description
+            xml:lang="eng"> The &quot;First Thousand Years of Greek&quot; project's inventory of Greek
+            texts. </description>
+    </ctsnamespace>
+    <textgroup 
+        urn="urn:cts:greekLit:tlg0363:">
+        <groupname
+            xml:lang="eng">Claudius Ptolemy</groupname>
+        <work
+            urn="urn:cts:greekLit:tlg0363.tlg009:"
+            xml:lang="grc">
+            <title
+                xml:lang="eng">Geography</title>
+            <edition
+                urn="urn:cts:greekLit:tlg0363.tlg009.hc01:">
+                <label
+                    xml:lang="eng">Smith</label>
+                <description xml:lang="eng">Electronic edition created by Neel Smith</description>
+                <online/>
+            </edition>
+        </work>
+    </textgroup>
+    
+    
+    ​
+    ​
+</TextInventory>
