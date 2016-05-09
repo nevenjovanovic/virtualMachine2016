@@ -81,8 +81,8 @@ git clone https://github.com/cite-architecture/cs2.git
 
 cd citemgr
 git pull
-git checkout cs2
 cp ../scripts/cts-test.gradle .
+cp ../scripts/ptolemy-test.gradle .
 #gradle clean
 
 #########################################################
@@ -110,6 +110,7 @@ su vagrant << EOF
 	gradle config
 	mkdir -p /vagrant/cs2/sparqlcts/src/main/webapp/invs
 	cp /vagrant/testcorpus2016/testinventory-2016.xml /vagrant/cs2/sparqlcts/src/main/webapp/invs/inventory.xml
+	cp /vagrant/demo-corpus/ptolemy_inventory.xml /vagrant/cs2/sparqlcts/src/main/webapp/invs/ptolemy_inventory.xml
 	cd /vagrant/cs2/sparqlcts
 	echo '##################################################'
 	echo '## The following tests are supposed to fail!    ##'
@@ -124,6 +125,8 @@ su vagrant << EOF
 
 	cd /vagrant/cs2/fuseki/fusekibase/databases/ds
 	rm *
+	cd /vagrant/cs2/fuseki/fusekibase/databases
+	mkdir ptolemy
 
 
 	echo '##################################################'
