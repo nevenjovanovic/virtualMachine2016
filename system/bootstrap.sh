@@ -91,7 +91,7 @@ cp ../scripts/ptolemy-test.gradle .
 
 cd /vagrant/cs2
 git pull
-git checkout vm2016
+# git checkout vm2016
 #gradle clean
 
 #########################################################
