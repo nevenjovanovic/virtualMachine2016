@@ -26,8 +26,15 @@ apt-get install -y bomstrip
 # version control
 apt-get install -y git
 
+# a better editor
+apt-get remove -y vim-tiny
+apt-get install -y vim
+
 # an easy editor
 apt-get install -y nano
+
+# And let's get Apache2, so we can do some URL rewriting for CTS and CITE
+apt-get install -y apache2
 
 
 
@@ -47,15 +54,25 @@ apt-get -y install groovy
 apt-get -y install gradle
 
 # Jena and Jena-Fuseki
-cd /usr/bin
-sudo curl http://apache.mirrors.ionfish.org/jena/binaries/apache-jena-3.0.1.tar.gz -o apache-jena-3.0.1.tar.gz
-sudo tar zxfv apache-jena-3.0.1.tar.gz
-sudo rm apache-jena-3.0.1.tar.gz
-sudo ln -s apache-jena-3.0.1 jena
 
-sudo curl http://apache.mirrors.ionfish.org/jena/binaries/apache-jena-fuseki-2.3.1.tar.gz -o apache-jena-fuseki-2.3.1.tar.gz
-sudo tar zxfv apache-jena-fuseki-2.3.1.tar.gz
-sudo rm apache-jena-fuseki-2.3.1.tar.gz
+
+echo "-------------------------------------"
+echo " Downloading Apache Jena "
+echo "-------------------------------------"
+
+cd /usr/bin
+sudo curl http://apache.mirrors.pair.com/jena/binaries/apache-jena-3.1.0.tar.gz -o apache-jena-3.1.0.tar.gz
+sudo tar zxfv apache-jena-3.1.0.tar.gz
+sudo rm apache-jena-3.1.0.tar.gz
+sudo ln -s apache-jena-3.1.0 jena
+
+echo "-------------------------------------"
+echo " Downloading Fuseki"
+echo "-------------------------------------"
+
+sudo curl http://apache.mirrors.pair.com/jena/binaries/apache-jena-fuseki-2.4.0.tar.gz -o apache-jena-fuseki-2.4.0.tar.gz
+sudo tar zxfv apache-jena-fuseki-2.4.0.tar.gz
+sudo rm apache-jena-fuseki-2.4.0.tar.gz
 
 
 #########################################################
@@ -74,6 +91,7 @@ chown vagrant:vagrant /home/vagrant/.profile
 cd /vagrant
 git clone https://github.com/cite-architecture/citemgr.git
 git clone https://github.com/cite-architecture/cs2.git
+git clone https://github.com/cite-architecture/cite_test_ttl.git
 
 #########################################################
 ### Set Up CITE Manager  ###########
@@ -109,7 +127,7 @@ su vagrant << EOF
 	gradle clean
 	gradle config
 	mkdir -p /vagrant/cs2/sparqlcts/src/main/webapp/invs
-	cp /vagrant/testcorpus2016/testinventory-2016.xml /vagrant/cs2/sparqlcts/src/main/webapp/invs/inventory.xml
+	cp /vagrant/cite_test_ttl/testsuite/textcorpus/testinventory.xml /vagrant/cs2/sparqlcts/srs/main/webapp/invs/inventory.xml
 	cp /vagrant/demo-corpus/ptolemy_inventory.xml /vagrant/cs2/sparqlcts/src/main/webapp/invs/ptolemy_inventory.xml
 	cd /vagrant/cs2/sparqlcts
 	echo '##################################################'
@@ -123,16 +141,14 @@ su vagrant << EOF
 	echo '##################################################'
 
 
-	cd /vagrant/cs2/fuseki/fusekibase/databases/ds
+	cd /vagrant/cs2/fuseki/fusekibase/databases/ctsTest
 	rm *
-	cd /vagrant/cs2/fuseki/fusekibase/databases
-	mkdir ptolemy
 
 
 	echo '##################################################'
 	echo '## Loading CTS Test Data into DB                ##'
 	echo '##################################################'
 
-	/usr/bin/jena/bin/tdbloader2 --loc /vagrant/cs2/fuseki/fusekibase/databases/ds /vagrant/testcorpus2016/testcorpus2016.ttl
+	/usr/bin/jena/bin/tdbloader2 --loc /vagrant/cs2/fuseki/fusekibase/databases/ctsTest /vagrant/cite_test_ttl/testsuite/textcorpus/ttl/testcorpus.ttl
 
 EOF

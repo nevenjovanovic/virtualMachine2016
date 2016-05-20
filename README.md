@@ -43,3 +43,11 @@ The `virtualMachine2016` directory, where this `README.md` file is, is mapped in
 - `cs2`
 - `testcorpus2016`
 
+### Misc. Notes
+
+If you reconfigure the Fuseki DB config (`/cs2/fuseki/config-template.ttl`), you need to do the following:
+
+- Delete the following directories (they will be rebuilt automatically): 
+	- `/cts2/fuseki/fusekibase/system`
+	- `/cts2/fuseki/fusekibase/system_files`
+- Re-run `gradle configure` (from `/cs2/`).
