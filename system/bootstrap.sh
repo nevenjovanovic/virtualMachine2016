@@ -23,6 +23,9 @@ apt-get install -y dos2unix
 # in your editorial work:
 apt-get install -y bomstrip
 
+# Curl
+apt-get install -y curl
+
 # version control
 apt-get install -y git
 
@@ -82,7 +85,9 @@ sudo rm apache-jena-fuseki-2.4.0.tar.gz
 
 # Set up vagrant user account:
 cp /vagrant/system/dotprofile /home/vagrant/.profile
+echo "source /vagrant/system/dotprofile" >> /home/vagrant/.bashrc
 chown vagrant:vagrant /home/vagrant/.profile
+chown vagrant:vagrant /home/vagrant/.bashrc
 
 #########################################################
 ### Clone/Pull/Update Some Repos  ###########
@@ -92,6 +97,7 @@ cd /vagrant
 git clone https://github.com/cite-architecture/citemgr.git
 git clone https://github.com/cite-architecture/cs2.git
 git clone https://github.com/cite-architecture/cite_test_ttl.git
+git clone https://github.com/Eumaeus/cts-demo-corpus.git
 
 #########################################################
 ### Set Up CITE Manager  ###########
@@ -100,7 +106,7 @@ git clone https://github.com/cite-architecture/cite_test_ttl.git
 cd citemgr
 git pull
 cp ../scripts/cts-test.gradle .
-cp ../scripts/ptolemy-test.gradle .
+cp ../scripts/cts-demo.gradle .
 #gradle clean
 
 #########################################################
@@ -109,46 +115,6 @@ cp ../scripts/ptolemy-test.gradle .
 
 cd /vagrant/cs2
 git pull
-# git checkout vm2016
-#gradle clean
+cd /vagrant
+mkdir data
 
-#########################################################
-### Set Up Fuseki with Test Data  ###########
-#########################################################
-
-
-su vagrant << EOF
-	
-	
-	export FUSEKI_BASE=/vagrant/cs2/fuseki/fusekibase
-	export JENA_HOME=/usr/bin/jena
-
-	cd /vagrant/cs2
-	gradle clean
-	gradle config
-	mkdir -p /vagrant/cs2/sparqlcts/src/main/webapp/invs
-	cp /vagrant/cite_test_ttl/testsuite/textcorpus/testinventory.xml /vagrant/cs2/sparqlcts/srs/main/webapp/invs/inventory.xml
-	cp /vagrant/demo-corpus/ptolemy_inventory.xml /vagrant/cs2/sparqlcts/src/main/webapp/invs/ptolemy_inventory.xml
-	cd /vagrant/cs2/sparqlcts
-	echo '##################################################'
-	echo '## The following tests are supposed to fail!    ##'
-	echo '##################################################'
-
-	gradle farmIntegrationTest
-
-	echo '##################################################'
-	echo '## The preceding tests were supposed to fail!   ##'
-	echo '##################################################'
-
-
-	cd /vagrant/cs2/fuseki/fusekibase/databases/ctsTest
-	rm *
-
-
-	echo '##################################################'
-	echo '## Loading CTS Test Data into DB                ##'
-	echo '##################################################'
-
-	/usr/bin/jena/bin/tdbloader2 --loc /vagrant/cs2/fuseki/fusekibase/databases/ctsTest /vagrant/cite_test_ttl/testsuite/textcorpus/ttl/testcorpus.ttl
-
-EOF
