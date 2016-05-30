@@ -36,8 +36,7 @@ apt-get install -y vim
 # an easy editor
 apt-get install -y nano
 
-# And let's get Apache2, so we can do some URL rewriting for CTS and CITE
-apt-get install -y apache2
+
 
 
 
@@ -118,3 +117,9 @@ git pull
 cd /vagrant
 mkdir data
 
+# And let's get Apache2, so we can do some URL rewriting for CTS and CITE
+apt-get install -y apache2
+a2enmod proxy
+a2enmod proxy_http
+a2enmod rewrite
+service apache2 restart
