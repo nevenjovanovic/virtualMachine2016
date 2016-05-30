@@ -45,14 +45,19 @@ These instructions assume familarity with the command-line environment and the v
 
 ## Running: Using the Scripts
 
-Once you have initialized the virtual machine, if you have stopped it with `vagrant halt`, you can re-start it with `vagrant up`. It will not take nearly as long to boot a second time. When it is running (you are returned to the command-prompt), you can log into it thus:
+Once you have initialized the virtual machine, if you have stopped it with `vagrant halt`, you can re-start it with `vagrant up`. It will not take nearly as long to boot a second time. When it is running (you are returned to the command-prompt), you can log into it thus, from the 'virtualMachine2016' directory:
 
-- From the `virtualMachine2016` directory on the host computer, the command `vagrant ssh` will log you into the VM.
-- `cd /vagrant/scripts`. There are a series of numbered scripts that will configure the CTS database and server, build data, load it, and start the CTS server.
+> `vagrant ssh`
+
+There are a series of numbered scripts, which will walk you through the necessary steps:
+
+>  `cd /vagrant/scripts; ls -la` 
+
+These will configure the CTS database and server, build data, load it, and start the CTS server.
 
 These scripts are intended to constitute a step-by-step manual on using the various tools necesary to serve texts using the Homer Multitext's implementation of CTS. 
 
-You should be able to run any of these scripts simply by typing their name. You can see them with `cd /vagrant/scripts; ll`.
+You should be able to run any of these scripts simply by typing their name.
 
 ### 0. Configure the CS2 Servlet
 
