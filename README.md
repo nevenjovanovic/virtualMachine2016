@@ -165,6 +165,8 @@ This might be useful for other applications drawing on CTS texts.
 
 The `virtualMachine2016` directory, where this `README.md` file is, is mapped in the virtual machine to `/vagrant`.
 
+**You can access everything in (the VM's) `/vagrant/` directory from your host computer, at `.../virtualMachine2016/`.
+
 ### Contents of `/vagrant`
 
 - `scripts`. Scripts and configuration files for building a working CTS service with data. 
