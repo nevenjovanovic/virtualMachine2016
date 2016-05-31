@@ -49,7 +49,7 @@ Once you have initialized the virtual machine, if you have stopped it with `vagr
 
 > `vagrant ssh`
 
-There are a series of numbered scripts, which will walk you through the necessary steps:
+There are a series of numbered scripts, which will walk you through the necessary steps. You can see them by navigating to their directory:
 
 >  `cd /vagrant/scripts; ls -la` 
 
