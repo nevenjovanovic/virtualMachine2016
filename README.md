@@ -115,6 +115,33 @@ See if it all works, and explore CTS. Run the script. Once Gradle has started ev
 
 Quit the server (back in the VM's command-line) with `control-c`.
 
+### 7. Set up Apache2 for Fancy Tricks
+
+> `7_Set_Up_Apache2.sh`
+
+As initially configured, there are two ways to access the CTS Service running on the Virtual Machine.
+
+1. From the host computer, at  http://192.168.33.10:8080 .
+2. From the host computer, at http://localhost:9090 .
+
+With a little configuration of the Apache2 server in the VM, we can offer somewhat easier access. The script `7_Set_Up_Apache2.sh` does the following:
+
+- copies a configuration file to `/etc/apache2/sites-available`
+- loads that configuration with the utility `a2ensite`
+- restarts Apache2 with the utility `apachectl`.
+
+The original configuration file is in `/vagrant/scripts/apache2-cite-proxy.conf`.
+
+Once it has been loaded, and Apache2 restarted, you can access the CTS Server, with all of its features at:
+
+>  `http://192.168.33.10/cts`
+
+You can also grab a text passage directly from the server at, *e.g.*:
+
+>  `http://192.168.33.10/cts-urn/urn:cts:greekLit:tlg0012.tlg001.fuPers:1.1-1.10`
+
+This might be useful for other applications drawing on CTS texts.
+
 ## General Instructions for the Virtual Machine
 
 - `vagrant up` starts the machine.
