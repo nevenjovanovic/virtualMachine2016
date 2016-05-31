@@ -57,7 +57,7 @@ These will configure the CTS database and server, build data, load it, and start
 
 These scripts are intended to constitute a step-by-step manual on using the various tools necesary to serve texts using the Homer Multitext's implementation of CTS. 
 
-You should be able to run any of these scripts simply by typing their name.
+You should be able to run any of these scripts simply by typing their name and [ENTER] or [RETURN].
 
 ### 0. Configure the CS2 Servlet
 
