@@ -17,7 +17,7 @@ echo "We have a file 'cts-demo.ttl', built with CITE-Manager."
 echo ""
 echo "We will add additional RDF, expressing an experimental 'aligned translation' of the Aeneid."
 echo ""
-echo "    cat /vagrant/data/cts-demo.ttl /vagrant/cts-demo-corpus/TTL-RDF/phi0690-phi003-alignedEng-RDF.ttl > /vagrant/data/cts-all.ttl"
+echo "cat /vagrant/data/cts-demo.ttl /vagrant/cts-demo-corpus/TTL-RDF/phi0690-phi003-alignedEng-RDF.ttl /vagrant/cts-demo-corpus/TTL-RDF/tlg0012-tlg001-fuEng-RDF.ttl > /vagrant/data/cts-all.ttl"
 echo ""
 cat /vagrant/data/cts-demo.ttl /vagrant/cts-demo-corpus/TTL-RDF/phi0690-phi003-alignedEng-RDF.ttl /vagrant/cts-demo-corpus/TTL-RDF/tlg0012-tlg001-fuEng-RDF.ttl > /vagrant/data/cts-all.ttl
 echo ""

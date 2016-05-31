@@ -23,7 +23,7 @@ echo "(Ignore the warning about 'reliably determine…'.)"
 echo ""
 echo "You can now access the CTS Service, from the host computer, at http://192.168.33.10/cts."
 echo ""
-echo "You can have quick access to an (unstyled XML) text-passage at, e.g., http://192.168.33.10/cts-urn/urn:cts:greekLit:tlg0012.tlg001.fuPers:1.1-1.10 ."
+echo "You can have quick access to an (unstyled XML) text-passage at, e.g., http://192.168.33.10/cts/gp/urn:cts:greekLit:tlg0012.tlg001.fuPers:1.1-1.10 ."
 echo ""
 echo "Done."
 
