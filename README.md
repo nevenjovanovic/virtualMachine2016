@@ -138,7 +138,13 @@ Once it has been loaded, and Apache2 restarted, you can access the CTS Server, w
 
 You can also grab a text passage directly from the server at, *e.g.*:
 
->  `http://192.168.33.10/cts-urn/urn:cts:greekLit:tlg0012.tlg001.fuPers:1.1-1.10`
+>  `http://192.168.33.10/cts/gp/urn:cts:greekLit:tlg0012.tlg001.fuPers:1.1-1.10`
+
+(Where `/gp/` stands for `getPassage`.) Similarly, you can get all valid citations for a define URN with, *e.g.*:
+
+>  `http://192.168.33.10/cts/gvr/urn:cts:greekLit:tlg0012.tlg001.fuPers:1`
+
+(Where `/gvr/` stands for `getValidReff`.)
 
 This might be useful for other applications drawing on CTS texts.
 

@@ -19,7 +19,8 @@ echo "We will add additional RDF, expressing an experimental 'aligned translatio
 echo ""
 echo "    cat /vagrant/data/cts-demo.ttl /vagrant/cts-demo-corpus/TTL-RDF/phi0690-phi003-alignedEng-RDF.ttl > /vagrant/data/cts-all.ttl"
 echo ""
-cat /vagrant/data/cts-demo.ttl /vagrant/cts-demo-corpus/TTL-RDF/phi0690-phi003-alignedEng-RDF.ttl > /vagrant/data/cts-all.ttl
+cat /vagrant/data/cts-demo.ttl /vagrant/cts-demo-corpus/TTL-RDF/phi0690-phi003-alignedEng-RDF.ttl /vagrant/cts-demo-corpus/TTL-RDF/tlg0012-tlg001-fuEng-RDF.ttl > /vagrant/data/cts-all.ttl
+echo ""
 echo "-----------------------------------"
 echo "Use the 'tdbloader2' utility from Apache Jena to load our 'cts-all.ttl' file into a TDB Database…"
 echo ""
@@ -27,7 +28,7 @@ echo "   /usr/bin/jena/bin/tdbloader2 --loc /vagrant/cs2/fuseki/fusekibase/datab
 echo ""
 /usr/bin/jena/bin/tdbloader2 --loc /vagrant/cs2/fuseki/fusekibase/databases/cts /vagrant/data/cts-all.ttl
 echo "-----------------------------------"
-echo "Done! The Demo CTS Corpus has been loaded as approximately 700,000 RDF statements."
+echo "Done! The Demo CTS Corpus has been loaded."
 
 
 
