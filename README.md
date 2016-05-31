@@ -159,7 +159,7 @@ This might be useful for other applications drawing on CTS texts.
 
 
 
-- After you have destroyed a VM, `vagrant up` will rebuild it and re-provision it anew.
+- After you have destroyed a VM, `vagrant up` will rebuild it and re-provision it anew. Run the numbered scripts again.
 
 ## Where Things Are
 
