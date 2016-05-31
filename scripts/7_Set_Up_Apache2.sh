@@ -19,7 +19,7 @@ echo "    sudo apachectl restart"
 echo ""
 sudo apachectl restart
 echo ""
-echo "(Ignore the warning about 'reliably determine…".)
+echo "(Ignore the warning about 'reliably determine…'.)"
 echo ""
 echo "You can now access the CTS Service, from the host computer, at http://192.168.33.10/cts."
 echo ""
