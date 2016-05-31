@@ -35,7 +35,7 @@ These instructions assume familarity with the command-line environment and the v
 
 	- If you do have [Git](https://git-scm.com): `cd ~/Desktop; git clone https://github.com/Leipzig-Furman-Plutarch/virtualMachine2016.git`
 
-- In a Terminal, navigate into the resulting directory, `virtalMachine2016`, with, *e.g.* `cd ~/Desktop/virtualMachine2016`.
+- In a Terminal, navigate into the resulting directory, `virtualMachine2016`, with, *e.g.* `cd ~/Desktop/virtualMachine2016`.
 
 - Start the virtual machine with the terminal command `vagrant up`. The first time you do this, Vagrant will take many minutes downloading files, seting up a Linux virtual machine, and provisioning it. **Do not let your computer go to sleep during this process**. 
 
