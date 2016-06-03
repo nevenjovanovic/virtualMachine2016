@@ -25,6 +25,14 @@ echo "You can now access the CTS Service, from the host computer, at http://192.
 echo ""
 echo "You can have quick access to an (unstyled XML) text-passage at, e.g., http://192.168.33.10/cts/gp/urn:cts:greekLit:tlg0012.tlg001.fuPers:1.1-1.10 ."
 echo ""
+echo "-----------------------------------"
+echo "Add an html page of sample links to /var/www/html …"
+echo "Access it at http://192.168.33.10/"
+echo ""
+echo "sudo cp Links.html /var/www/index.html"
+echo ""
+sudo cp Links.html /var/www/index.html
+echo ""
 echo "Done."
 
 
