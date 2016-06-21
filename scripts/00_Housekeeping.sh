@@ -1,7 +1,7 @@
 #!/usr/bin/env /bin/bash
 
 echo "-----------------------------------"
-echo "Housekeeping: Update all Git repositories…"
+echo "Housekeeping: Updating all Git repositories…"
 echo "-----------------------------------"
 
 cd /vagrant/cs2

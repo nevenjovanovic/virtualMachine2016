@@ -1,13 +1,13 @@
 #!/usr/bin/env /bin/bash
 
 echo "-----------------------------------"
-echo "Navigate to where Gradle/Fuseki stores data files, specifically the 'cts' data…"
+echo "Navigating to where Gradle/Fuseki stores data files, specifically the 'cts' data…"
 echo ""
 
 cd /vagrant/cs2/fuseki/fusekibase/databases/cts
 
 echo "-----------------------------------"
-echo "Remove anything there, since we are loading new data…"
+echo "Removing anything there, since we are loading new data…"
 echo ""
 
 rm *
@@ -21,7 +21,7 @@ cat /vagrant/data/cts-demo.ttl /vagrant/cts-demo-corpus/TTL-RDF/phi0690-phi003-a
 
 echo ""
 echo "-----------------------------------"
-echo "Use the 'tdbloader2' utility from Apache Jena to load our 'cts-all.ttl' file into a TDB Database…"
+echo "Using the 'tdbloader2' utility from Apache Jena to load our 'cts-all.ttl' file into a TDB Database…"
 echo ""
 
 /usr/bin/jena/bin/tdbloader2 --loc /vagrant/cs2/fuseki/fusekibase/databases/cts /vagrant/data/cts-all.ttl

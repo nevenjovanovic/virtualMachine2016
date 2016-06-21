@@ -1,13 +1,13 @@
 #!/usr/bin/env /bin/bash
 
 echo "-----------------------------------"
-echo "Navigate to the SparqlCTS project in CS2…"
+echo "Navigating to the SparqlCTS project in CS2…"
 echo ""
 
 cd /vagrant/cs2/sparqlcts
 
 echo "-----------------------------------"
-echo "Run it."
+echo "Running it."
 echo ""
 echo "Watch the command-line. The service will take a few moments to start up. You will know it is ready when you see:"
 echo ""

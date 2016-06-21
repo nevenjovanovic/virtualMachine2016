@@ -1,37 +1,37 @@
 #!/usr/bin/env /bin/bash
 
 echo "-----------------------------------"
-echo "Navigate to the cs2 directory…"
+echo "Navigating to the cs2 directory…"
 echo ""
 
 cd /vagrant/cs2
 
 echo "-----------------------------------"
-echo "Make sure Gradle is working properly, and let it download a million dependencies…"
+echo "Making sure Gradle is working properly, and letting it download a million dependencies…"
 echo ""
 
 gradle clean
 
 echo "-----------------------------------"
-echo "Run the 'configure' task in Gradle to set up the Database…"
+echo "Running the 'configure' task in Gradle to set up the Database…"
 echo ""
 
 gradle configure
 
 echo "-----------------------------------"
-echo "Create an 'invs' directory where SparqlCTS can find text inventory files…"
+echo "Creating an 'invs' directory where SparqlCTS can find text inventory files…"
 echo ""
 
 mkdir -p /vagrant/cs2/sparqlcts/src/main/webapp/invs
 
 echo "-----------------------------------"
-echo "Navigate to the SparqlCTS directory…"
+echo "Navigating to the SparqlCTS directory…"
 echo ""
 
 cd /vagrant/cs2/sparqlcts
 
 echo "-----------------------------------"
-echo "Run the Integration Tests for SparqlCTS."
+echo "Running the Integration Tests for SparqlCTS."
 echo ""
 echo "THESE WILL ALL FAIL! THERE IS NO DATA YET!"
 echo ""
@@ -42,6 +42,6 @@ echo ""
 gradle farmIntegrationTest
 
 echo "-----------------------------------"
-echo "The 'FAIL' you see is okay! There was no data loaded yet."
+echo "The 'FAIL' messages you see are okay! There is no data loaded yet, so of course they fail."
 echo "-----------------------------------"
 echo "Done!"

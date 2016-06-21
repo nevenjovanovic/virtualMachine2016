@@ -1,7 +1,7 @@
 #!/usr/bin/env /bin/bash
 
 echo "-----------------------------------"
-echo "Navigate to cs2/sparqlcts…"
+echo "Navigating to cs2/sparqlcts…"
 echo ""
 
 cd /vagrant/cs2/sparqlcts

@@ -20,6 +20,7 @@ echo ""
 
 echo "-----------------------------------"
 echo "Done! The CTS Template data has been loaded."
+echo "Re-run the scrdipt '6_Run SparqlCTS.sh' to configure the service and run it with the new data."
 
 
 
