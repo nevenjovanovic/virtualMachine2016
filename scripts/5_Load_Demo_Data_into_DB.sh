@@ -1,7 +1,7 @@
 #!/usr/bin/env /bin/bash
 
 echo "-----------------------------------"
-echo "Natigate to where Gradle/Fuseki stores data files, specifically the 'ctsTest' data…"
+echo "Navigate to where Gradle/Fuseki stores data files, specifically the 'cts' data…"
 echo ""
 echo "   cd /vagrant/cs2/fuseki/fusekibase/databases/cts"
 echo ""
