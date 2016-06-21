@@ -3,6 +3,7 @@
 echo "-----------------------------------"
 echo "Housekeeping: Update all Git repositories…"
 echo "-----------------------------------"
+
 cd /vagrant/cs2
 git pull
 cd /vagrant/cite_test_ttl
@@ -11,5 +12,6 @@ cd /vagrant/citemgr
 git pull
 cd /vagrant/cts-demo-corpus
 git pull
+
 echo "-----------------------------------"
 echo ""

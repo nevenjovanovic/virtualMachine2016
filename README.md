@@ -19,6 +19,8 @@ To use this Virtual Machine, you need to install two pieces of software:
 - [VirtualBox](https://www.virtualbox.org)
 - [Vagrant](https://www.vagrantup.com)
 
+> **For Windows 10 users:** There is a known incompatibility between VirtualBox and Win10's networking. If you are on Windows 10, you might try downloading a recent [test build](https://www.virtualbox.org/wiki/Testbuilds) of VirtualBox.
+
 ## Initializing the Virtual Machine
 
 These instructions assume familarity with the command-line environment and the very basics of Unix/Linux.

@@ -3,21 +3,21 @@
 echo "-----------------------------------"
 echo "Copy 'apache2-cite-proxy.conf' into place…"
 echo ""
-echo "    sudo cp /vagrant/scripts/apache2-cite-proxy.conf /etc/apache2/sites-available/cite.conf"
-echo ""
+
 sudo cp /vagrant/scripts/apache2-cite-proxy.conf /etc/apache2/sites-available/cite.conf
+
 echo "-----------------------------------"
 echo "Activate it…"
 echo ""
-echo "    sudo a2ensite cite.conf"
-echo ""
+
 sudo a2ensite cite.conf
+
 echo "-----------------------------------"
 echo "Restart Apache2…"
 echo ""
-echo "    sudo apachectl restart"
-echo ""
+
 sudo apachectl restart
+
 echo ""
 echo "(Ignore the warning about 'reliably determine…'.)"
 echo ""
@@ -29,9 +29,9 @@ echo "-----------------------------------"
 echo "Add an html page of sample links to /var/www/html …"
 echo "Access it at http://192.168.33.10/"
 echo ""
-echo "sudo cp Links.html /var/www/index.html"
-echo ""
+
 sudo cp Links.html /var/www/index.html
+
 echo ""
 echo "Done."
 
