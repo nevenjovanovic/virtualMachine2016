@@ -25,10 +25,10 @@ echo ""
 gradle -Pproj=citemgr-cts-demo.gradle projects:ctsttl
 
 echo "-----------------------------------"
-echo "Copy the resulting file, 'corpus.tll', into 'vagrant/data/' as 'cts-demo.ttl', for safekeeping."
+echo "Copy the resulting file, 'cts.tll', into 'vagrant/data/' as 'cts-demo.ttl', for safekeeping."
 echo ""
 
-cp /vagrant/citemgr/projects/build/ttl/corpus.ttl /vagrant/data/cts-demo.ttl
+cp /vagrant/citemgr/projects/build/ttl/cts.ttl /vagrant/data/cts-demo.ttl
 
 echo "-----------------------------------"
 echo "Move the TextInventory file cataloging this test data into place."
