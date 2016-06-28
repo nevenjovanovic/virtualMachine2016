@@ -65,7 +65,7 @@ You should be able to run any of these scripts simply by typing their name and [
 
 > `0_Configure_CS2.sh`
 
-This script navigates to `/vagrant/cs2` and uses [Gradle](http://gradle.org) to configure the CITE Servlet application (cs2). This only needs to be done once.
+This script navigates to `/vagrant/cs2` and uses [Gradle](http://gradle.org) to configure the CITE Servlet application (cs2). This only needs to be done once. As part of the configuration process, the script will run the CITE Servlet's unit tests; they will all fail. This is normal, since you haven't loaded any data yet.
 
 ### 1. Build the Test Data with CITE-Manager
 
