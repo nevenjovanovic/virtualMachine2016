@@ -1,5 +1,5 @@
 <?xml-model href="CitationConfiguration.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<CitationConfiguration xmlns="http://chs.harvard.edu/xmlns/cts">
+<CitationConfiguration xmlns="http://chs.harvard.edu/xmlns/hocuspocus">
   
   <online type="xml" urn="urn:cts:croala:adam.radauanus-traditio.croala-op:" docname="adam-radauanus-traditio.xml">
     <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
