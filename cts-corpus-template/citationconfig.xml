@@ -105,16 +105,7 @@
       <citation label="explicit" scope="/tei:TEI/tei:text/tei:body/tei:div/tei:closer[@n='?']" xpath="/tei:closer[@n='?']"/>
     </citationMapping>
   </online>
-  <online type="xml" urn="urn:cts:croala:andreis-f.epist-bonzagno-1529.croala-op:" docname="andreis-f-epist-bonzagno-1529.xml">
-    <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
-    <citationMapping>
-      <citation label="incipit" scope="/tei:TEI/tei:text/tei:body/tei:div/tei:opener[@n='?']" xpath="/tei:opener[@n='?']"/>
-      <citation label="paragraphus" scope="/tei:TEI/tei:text/tei:body/tei:div/tei:p[@n='?']" xpath="/tei:p[@n='?']"/>
-      <citation label="explicit" scope="/tei:TEI/tei:text/tei:body/tei:div/tei:closer[@n='?']" xpath="/tei:closer[@n='?']"/>
-      <citation label="postscriptum" scope="/tei:TEI/tei:text/tei:body/tei:div/tei:postscript[@n='?']" xpath="/tei:postscript[@n='?']"/>
-      <citation label="(\w+)" scope="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:*[@n='$1'])" xpath="/tei:*[@n='$1'])"/>
-    </citationMapping>
-  </online>
+  
   <online type="xml" urn="urn:cts:croala:andreis-f.epist-lasc.croala-op:" docname="andreis-f-epist-lasc.xml">
     <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
     <citationMapping>
@@ -949,13 +940,7 @@
       <citation label="explicit" scope="/tei:TEI/tei:text/tei:body/tei:div/tei:closer[@n='?']" xpath="/tei:closer[@n='?']"/>
     </citationMapping>
   </online>
-  <online type="xml" urn="urn:cts:croala:kunic-r.hor-paraphrasis.croala-op:" docname="kunic-r-hor-paraphrasis.xml">
-    <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
-    <citationMapping>
-      <citation label="versus" scope="/tei:TEI/tei:text/tei:body/tei:div/tei:l[@n='?']" xpath="/tei:l[@n='?']"/>
-      <citation label="(\w+)" scope="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:l[@n='$1'])" xpath="/tei:l[@n='$1'])"/>
-    </citationMapping>
-  </online>
+
   <online type="xml" urn="urn:cts:croala:kunic-r.hymnus-cererem.croala-op:" docname="kunic-r-hymnus-cererem.xml">
     <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
     <citationMapping>
@@ -970,15 +955,7 @@
       <citation label="versus" scope="/tei:TEI/tei:text/tei:body/tei:div/tei:l[@n='?']" xpath="/tei:l[@n='?']"/>
     </citationMapping>
   </online>
-  <online type="xml" urn="urn:cts:croala:lipavic.eleg.croala-op:" docname="lipavic-eleg.xml">
-    <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
-    <citationMapping>
-      <citation label="titulus" scope="/tei:TEI/tei:text/tei:body/tei:div/tei:head[@n='?']" xpath="/tei:head[@n='?']"/>
-      <citation label="versus" scope="/tei:TEI/tei:text/tei:body/tei:div/tei:l[@n='?']" xpath="/tei:l[@n='?']"/>
-      <citation label="explicit" scope="/tei:TEI/tei:text/tei:body/tei:div/tei:closer[@n='?']" xpath="/tei:closer[@n='?']"/>
-      <citation label="(\w+)" scope="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:l[@n='$1'])" xpath="/tei:l[@n='$1'])"/>
-    </citationMapping>
-  </online>
+  
   <online type="xml" urn="urn:cts:croala:makarelic-j.epigr.croala-op:" docname="makarelic-j-epigr.xml">
     <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
     <citationMapping>
@@ -1116,14 +1093,7 @@
       <citation label="explicit" scope="/tei:TEI/tei:text/tei:body/tei:div/tei:closer[@n='?']" xpath="/tei:closer[@n='?']"/>
     </citationMapping>
   </online>
-  <online type="xml" urn="urn:cts:croala:niger-t.epigramma-statil.croala-op:" docname="niger-t-epigramma-statil.xml">
-    <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
-    <citationMapping>
-      <citation label="titulus" scope="/tei:TEI/tei:text/tei:body/tei:div/tei:head[@n='?']" xpath="/tei:head[@n='?']"/>
-      <citation label="versus" scope="/tei:TEI/tei:text/tei:body/tei:div/tei:l[@n='?']" xpath="/tei:l[@n='?']"/>
-      <citation label="(\w+)" scope="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:l[@n='$1'])" xpath="/tei:l[@n='$1'])"/>
-    </citationMapping>
-  </online>
+  
   <online type="xml" urn="urn:cts:croala:niger-t.epist-adr-1522.croala-op:" docname="niger-t-epist-adr-1522.xml">
     <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
     <citationMapping>
@@ -1197,14 +1167,7 @@
       <citation label="versus" scope="/tei:TEI/tei:text/tei:body/tei:div/tei:l[@n='?']" xpath="/tei:l[@n='?']"/>
     </citationMapping>
   </online>
-  <online type="xml" urn="urn:cts:croala:croala0145.ianci-epitaph.croala-op:" docname="nn-ianci-epitaph.xml">
-    <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
-    <citationMapping>
-      <citation label="titulus" scope="/tei:TEI/tei:text/tei:body/tei:div/tei:head[@n='?']" xpath="/tei:head[@n='?']"/>
-      <citation label="versus" scope="/tei:TEI/tei:text/tei:body/tei:div/tei:l[@n='?']" xpath="/tei:l[@n='?']"/>
-      <citation label="(\w+)" scope="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:l[@n='$1'])" xpath="/tei:l[@n='$1'])"/>
-    </citationMapping>
-  </online>
+  
   <online type="xml" urn="urn:cts:croala:croala0146.inscriptio-ragninae-1004.croala-op:" docname="nn-inscriptio-ragninae-1004.xml">
     <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
     <citationMapping>
@@ -1614,14 +1577,7 @@
       <citation label="paragraphus" scope="/tei:TEI/tei:text/tei:body/tei:div/tei:p[@n='?']" xpath="/tei:p[@n='?']"/>
     </citationMapping>
   </online>
-  <online type="xml" urn="urn:cts:croala:vitezov-ritter-p.epist-marsil.croala-op:" docname="vitezov-ritter-p-epist-marsil.xml">
-    <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
-    <citationMapping>
-      <citation label="titulus" scope="/tei:TEI/tei:text/tei:body/tei:div/tei:head[@n='?']" xpath="/tei:head[@n='?']"/>
-      <citation label="versus" scope="/tei:TEI/tei:text/tei:body/tei:div/tei:l[@n='?']" xpath="/tei:l[@n='?']"/>
-      <citation label="(\w+)" scope="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:l[@n='$1'])" xpath="/tei:l[@n='$1'])"/>
-    </citationMapping>
-  </online>
+  
   <online type="xml" urn="urn:cts:croala:vramec-a.epigr.croala-op:" docname="vramec-a-epigr.xml">
     <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
     <citationMapping>

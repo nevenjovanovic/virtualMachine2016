@@ -61,14 +61,7 @@
 </textgroup>
 <textgroup urn="urn:cts:croala:andreis-f:">
   <groupname xml:lang="hrv">Andreis, Franjo Trankvil 1490-1571</groupname>
-  <work urn="urn:cts:croala:andreis-f.1529-02-15:" xml:lang="lat">
-    <title xml:lang="lat">Ad Iohannem Bonzagnum epistula, versio electronica</title>
-    <edition urn="urn:cts:croala:andreis-f.1529-02-15.croala-op:">
-      <label xml:lang="lat">Edidit: Laszowski, Emilij. </label>
-      <description xml:lang="hrv">Podatak o izdanju: Rad nastao u okviru znanstvenog projekta Croatica et Tyrolensia, ( Filozofski fakultet Sveučilišta u Zagrebu , Zagreb Hrvatska). Studenoga 2015.</description>
-      <online/>
-    </edition>
-  </work>
+  
   <work urn="urn:cts:croala:andreis-f.const:" xml:lang="lat">
     <title xml:lang="lat">Commentarius rerum actarum Constantinopoli anno 1542. Versio electronica</title>
     <edition urn="urn:cts:croala:andreis-f.const.croala-op:">
@@ -1064,14 +1057,7 @@
 </textgroup>
 <textgroup urn="urn:cts:croala:kunic-r:">
   <groupname xml:lang="hrv">Kunić, Rajmund 1719-1794</groupname>
-  <work urn="urn:cts:croala:kunic-r.hor-paraphrasis:" xml:lang="lat">
-    <title xml:lang="lat">Paraphrasis Horatii Odae I, versio electronica</title>
-    <edition urn="urn:cts:croala:kunic-r.hor-paraphrasis.croala-op:">
-      <label xml:lang="lat">Edidit: Vladimir Vratović. </label>
-      <description xml:lang="hrv">Podatak o izdanju: Elektronska verzija: Croatica et Tyrolensia, znanstveni projekt na Filozofskom fakultetu Sveučilišta u Zagrebu , Zagreb Hrvatska. Svibnja 2016.</description>
-      <online/>
-    </edition>
-  </work>
+  
   <work urn="urn:cts:croala:kunic-r.hymnus-cererem:" xml:lang="lat">
     <title xml:lang="lat">Ex Graeco Homeri Hymnus ad Cererem, versio electronica</title>
     <edition urn="urn:cts:croala:kunic-r.hymnus-cererem.croala-op:">
@@ -1089,17 +1075,7 @@
     </edition>
   </work>
 </textgroup>
-<textgroup urn="urn:cts:croala:lipavic:">
-  <groupname xml:lang="hrv">Lipavić, Ivan floruit 1465</groupname>
-  <work urn="urn:cts:croala:lipavic.eleg:" xml:lang="lat">
-    <title xml:lang="lat">Joannes Lipauich post pestem Tragurium rediens composuit, versio electronica</title>
-    <edition urn="urn:cts:croala:lipavic.eleg.croala-op:">
-      <label xml:lang="lat">Edidit: Šime Jurić. </label>
-      <description xml:lang="hrv">Podatak o izdanju: elektronska verzija: Digitalizacija hrvatskih latinista, znanstveni projekt na Filozofskom fakultetu Sveučilišta u Zagrebu , Zagreb Hrvatska. Siječnja 2009.</description>
-      <online/>
-    </edition>
-  </work>
-</textgroup>
+
 <textgroup urn="urn:cts:croala:makarelic-j:">
   <groupname xml:lang="hrv">Makarelić, Jerolim floruit 1496</groupname>
   <work urn="urn:cts:croala:makarelic-j.epigr:" xml:lang="lat">
@@ -1271,14 +1247,7 @@
 </textgroup>
 <textgroup urn="urn:cts:croala:niger-t:">
   <groupname xml:lang="hrv">Niger, Toma</groupname>
-  <work urn="urn:cts:croala:niger-t.epigramma-statil:" xml:lang="lat">
-    <title xml:lang="lat">Epigramma in piam curam Ioannis Statilii Traguritae, versio electronica</title>
-    <edition urn="urn:cts:croala:niger-t.epigramma-statil.croala-op:">
-      <label xml:lang="lat">Edidit: Bratislav Lučin. </label>
-      <description xml:lang="hrv">Podatak o izdanju: elektronska verzija: Croatica et Tyrolensia, znanstveni projekt na Filozofskom fakultetu Sveučilišta u Zagrebu , Zagreb Hrvatska. Ožujka 2014.</description>
-      <online/>
-    </edition>
-  </work>
+  
   <work urn="urn:cts:croala:niger-t.epist-adr-1522:" xml:lang="lat">
     <title xml:lang="lat">Epistula ad Adrianum VI, versio electronica</title>
     <edition urn="urn:cts:croala:niger-t.epist-adr-1522.croala-op:">
@@ -1378,17 +1347,7 @@
     </edition>
   </work>
 </textgroup>
-<textgroup urn="urn:cts:croala:croala0145:">
-  <groupname xml:lang="hrv">Anonymus floruit 1493</groupname>
-  <work urn="urn:cts:croala:croala0145.ianci-epitaph:" xml:lang="lat">
-    <title xml:lang="lat">Janci Alberti epitaphium, versio electronica</title>
-    <edition urn="urn:cts:croala:croala0145.ianci-epitaph.croala-op:">
-      <label xml:lang="lat">Edidit: Cvito Fisković. </label>
-      <description xml:lang="hrv">Podatak o izdanju: Elektronska verzija: Digitalizacija hrvatskih latinista, znanstveni projekt na Filozofskom fakultetu Sveučilišta u Zagrebu , Zagreb Hrvatska. Rujna 2012</description>
-      <online/>
-    </edition>
-  </work>
-</textgroup>
+
 <textgroup urn="urn:cts:croala:croala0146:">
   <groupname xml:lang="hrv">Anonymus floruit 1004</groupname>
   <work urn="urn:cts:croala:croala0146.inscriptio-ragninae-1004:" xml:lang="lat">
@@ -1918,14 +1877,7 @@
       <online/>
     </edition>
   </work>
-  <work urn="urn:cts:croala:vitezov-ritter-p.epist-marsil:" xml:lang="lat">
-    <title xml:lang="lat">Ad comitem Marsilium, caesareum legatum, versio electronica</title>
-    <edition urn="urn:cts:croala:vitezov-ritter-p.epist-marsil.croala-op:">
-      <label xml:lang="lat">Edidit: Vjekoslav Klaić. </label>
-      <description xml:lang="hrv">Podatak o izdanju: Versio electronica TEI XML: Croatiae auctores Latini, indagatio in Facultate philosophica Universitatis Zagrabiensis , Zagreb, Croatia, mense Augusto 2012.</description>
-      <online/>
-    </edition>
-  </work>
+  
 </textgroup>
 <textgroup urn="urn:cts:croala:vramec-a:">
   <groupname xml:lang="hrv">Vramec, Antun 1538-1588</groupname>
